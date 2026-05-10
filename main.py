@@ -6,7 +6,8 @@ questions = [
     ["What is H2O?", "Oxygen", "Salt", "Water", "Hydrogen", 3],
     ["How many playes are on a basketball team on the court?", "5", "6", "7", "11", 1]
 ]
-
+prizes = [100000, 280000, 320000, 560000, 600000,780000]
+i = 0
 for question in questions:
     print(question[0])
     print(f"a. {question[1]}")
@@ -22,3 +23,5 @@ for question in questions:
         print(f"Incorrect, the correct anwer was {question[5]}")
         print("Better luck nex time!")
         break
+    print(f"You won {prizes[i]}")
+    i +=1
